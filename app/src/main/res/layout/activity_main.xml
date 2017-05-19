@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff9c4"
+    android:orientation="vertical"
+    tools:context="com.tomasz.grago.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/points_view"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/points_list_view">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="42sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="34sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/points_view"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView">
+
+            <GridView
+                android:id="@+id/grid_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnWidth="60dp"
+                android:numColumns="13" />
+
+            <GridView
+                android:id="@+id/dots_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnWidth="60dp"
+                android:numColumns="13" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/czarny"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/bialy"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
